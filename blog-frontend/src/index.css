@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 9px;
+  padding: 10px 16px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: #172554;
+  color: white;
+  padding: 28px max(20px, calc((100% - 1000px) / 2));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.header h1 {
+  margin: 0 0 5px;
+}
+
+.header p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.container {
+  width: min(1000px, calc(100% - 32px));
+  margin: 30px auto;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  margin-bottom: 18px;
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.07);
+}
+
+.card h2,
+.card h3 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+.card form {
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #d7dce5;
+  border-radius: 9px;
+  padding: 12px;
+  margin-bottom: 12px;
+  outline: none;
+  background: white;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+}
+
+.search-row {
+  margin-bottom: 25px;
+}
+
+.search-row form {
+  display: flex;
+}
+
+.search-row input {
+  margin: 0;
+}
+
+.search-row button {
+  white-space: nowrap;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.secondary {
+  background: #e5e7eb;
+  color: #172033;
+}
+
+.danger {
+  background: #dc2626;
+}
+
+.message {
+  background: #e0ecff;
+  color: #1e3a8a;
+  border-radius: 10px;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.blog-top span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.blog p {
+  white-space: pre-wrap;
+  line-height: 1.7;
+  color: #475569;
+}
+
+.empty {
+  text-align: center;
+  color: #64748b;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin: 30px 0;
+}
+
+footer {
+  text-align: center;
+  color: #64748b;
+  padding: 30px;
+}
+
+@media (max-width: 650px) {
+  .header {
+    align-items: flex-start;
+  }
+
+  .search-row form {
+    flex-direction: column;
+  }
+
+  .blog-top {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
